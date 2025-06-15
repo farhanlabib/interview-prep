@@ -12,6 +12,7 @@
     "@types/node": "^22.15.17",
     "allure-commandline": "^2.34.0",
     "allure-playwright": "^3.2.2",
+    "gh-pages": "^6.3.0",
     "ortoni-report": "^3.0.2"
   },
   "dependencies": {
