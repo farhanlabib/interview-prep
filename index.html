@@ -351,17 +351,10 @@
                         </div>
                     </div>
                     <div class="column is-one-sixth">
-                        <div class="box  " style="border-left: 5px solid hsl(var(--bulma-danger-h), var(--bulma-danger-s), var(--bulma-danger-l)) !important"
-                            data-status="failed">
+                        <div class="box  " style="border-left: 5px solid hsl(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-l)) !important"
+                            data-status="passed">
                             <p class="title is-size-3 mb-0">1</p>
-                            <p class="subtitle is-size-7">Failed</p>
-                        </div>
-                    </div>
-                    <div class="column is-one-sixth">
-                        <div class="box  " style="border-left: 5px solid #69748c"
-                            data-status="retry">
-                            <p class="title is-size-3 mb-0">2</p>
-                            <p class="subtitle is-size-7">Retry</p>
+                            <p class="subtitle is-size-7">Passed</p>
                         </div>
                     </div>
                 </div>
@@ -375,7 +368,7 @@
                                     <span class="icon has-text-success mr-2">
                                         <i class="fas fa-chart-pie"></i>
                                     </span>
-                                    <span class="is-size-5 has-text-weight-bold">0.00 %</span>
+                                    <span class="is-size-5 has-text-weight-bold">100.00 %</span>
                                 </p>
                             </div>
                             <div class="field">
@@ -384,7 +377,7 @@
                                     <span class="icon has-text-info mr-2">
                                         <i class="fas fa-calendar-alt"></i>
                                     </span>
-                                    <span class="is-size-5">15-Jun-2025 4:20:15 PM</span>
+                                    <span class="is-size-5">15-Jun-2025 4:27:47 PM</span>
                                 </p>
                             </div>
                             <div class="field">
@@ -393,7 +386,7 @@
                                     <span class="icon has-text-warning mr-2">
                                         <i class="fas fa-stopwatch"></i>
                                     </span>
-                                    <span class="is-size-5">02s:640ms</span>
+                                    <span class="is-size-5">02s:437ms</span>
                                 </p>
                             </div>
                         </div>
@@ -477,7 +470,7 @@
                                 data: {
                                     labels: ['Passed', 'Failed', 'Skipped', 'Flaky', 'Retry'],
                                     datasets: [{
-                                        data: [0, 1, 0, 0, 2],
+                                        data: [1, 0, 0, 0, 0],
                                 backgroundColor: ['#28a745', '#ff6685', '#66d1ff', '#ffb70f', '#69748c']}]
                                 },
                                 options: {
@@ -552,16 +545,16 @@
                                 }
                             });
                             const passedTests = [
-                  0
+                  1
                 ];
                             const failedTests = [
-                  1
+                  0
                 ];
                             const skippedTests = [
                   0
                 ];
                             const retryTests = [
-                  2
+                  0
                 ];
                             const flakyTests = [
                   0
@@ -647,18 +640,10 @@
                             </div>
                         </div>
                         <div class="column is-one-sixth">
-                            <div class="box filter is-clickable" style="border-left: 5px solid hsl(var(--bulma-danger-h), var(--bulma-danger-s), var(--bulma-danger-l)) !important"
-                                data-status="failed">
+                            <div class="box filter is-clickable" style="border-left: 5px solid hsl(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-l)) !important"
+                                data-status="passed">
                                 <p class="title is-size-6 mb-0">
-                                    1 <span class="icon is-small"><i class="fa fa-times-circle"></i></span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="column is-one-sixth">
-                            <div class="box filter is-clickable" style="border-left: 5px solid #69748c"
-                                data-status="retry">
-                                <p class="title is-size-6 mb-0">
-                                    2 <span class="icon is-small"><i class="fa-solid fa-repeat"></i></span>
+                                    1 <span class="icon is-small"><i class="fa fa-check-circle"></i></span>
                                 </p>
                             </div>
                         </div>
@@ -864,35 +849,11 @@
                                             <span class="is-size-6">Login</span>
                                         </summary>
                                         <div class="test-item 
-                                            status-failed
+                                            status-passed
                                              ml-4" data-suite-name="Login"
                                             data-test-tags="" data-project-name="chromium" data-test-id="0"
-                                            data-test-history-id="test.spec.js:chromium:Login" data-test-status="failed " data-test-duration="7ms">
+                                            data-test-history-id="test.spec.js:chromium:Login" data-test-status="passed " data-test-duration="01s:337ms">
                                             <div class="icon-text">
-                                                <span>Login</span>
-                                            </div>
-                                            <span class="tag duration-tag has-text-weight-medium">chromium</span>
-                                        </div>                <div class="test-item 
-                                            status-failed
-                                             ml-4" data-suite-name="Login"
-                                            data-test-tags="" data-project-name="chromium" data-test-id="1"
-                                            data-test-history-id="test.spec.js:chromium:Login" data-test-status="failed retry" data-test-duration="7ms">
-                                            <div class="icon-text">
-                                                <span class="icon has-text-info">
-                                                    <i class="fa-solid fa-rotate-right"></i>
-                                                </span>
-                                                <span>Login</span>
-                                            </div>
-                                            <span class="tag duration-tag has-text-weight-medium">chromium</span>
-                                        </div>                <div class="test-item 
-                                            status-failed
-                                             ml-4" data-suite-name="Login"
-                                            data-test-tags="" data-project-name="chromium" data-test-id="2"
-                                            data-test-history-id="test.spec.js:chromium:Login" data-test-status="failed retry" data-test-duration="7ms">
-                                            <div class="icon-text">
-                                                <span class="icon has-text-info">
-                                                    <i class="fa-solid fa-rotate-right"></i>
-                                                </span>
                                                 <span>Login</span>
                                             </div>
                                             <span class="tag duration-tag has-text-weight-medium">chromium</span>
@@ -913,42 +874,42 @@
                     <div class="column is-one-sixth">
                         <div class="box  " style="border-left: 5px solid hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l)) !important"
                             data-status="">
-                            <p class="title is-size-3 mb-0">7</p>
+                            <p class="title is-size-3 mb-0">8</p>
                             <p class="subtitle is-size-7">Total Runs</p>
                         </div>
                     </div>
                     <div class="column is-one-sixth">
                         <div class="box  " style="border-left: 5px solid hsl(var(--bulma-primary-h), var(--bulma-primary-s), var(--bulma-primary-l)) !important"
                             data-status="">
-                            <p class="title is-size-3 mb-0">9</p>
+                            <p class="title is-size-3 mb-0">8</p>
                             <p class="subtitle is-size-7">Total Tests</p>
                         </div>
                     </div>
                     <div class="column is-one-sixth">
                         <div class="box  " style="border-left: 5px solid hsl(var(--bulma-success-h), var(--bulma-success-s), var(--bulma-success-l)) !important"
                             data-status="Passed">
-                            <p class="title is-size-3 mb-0">4</p>
+                            <p class="title is-size-3 mb-0">6</p>
                             <p class="subtitle is-size-7">Passed</p>
                         </div>
                     </div>
                     <div class="column is-one-sixth">
                         <div class="box  " style="border-left: 5px solid hsl(var(--bulma-danger-h), var(--bulma-danger-s), var(--bulma-danger-l)) !important"
                             data-status="Failed">
-                            <p class="title is-size-3 mb-0">5</p>
+                            <p class="title is-size-3 mb-0">2</p>
                             <p class="subtitle is-size-7">Failed</p>
                         </div>
                     </div>
                     <div class="column is-one-sixth">
                         <div class="box  " style="border-left: 5px solid hsl(var(--bulma-info-h), var(--bulma-info-s), var(--bulma-info-l)) !important"
                             data-status="">
-                            <p class="title is-size-3 mb-0">44.44</p>
+                            <p class="title is-size-3 mb-0">75</p>
                             <p class="subtitle is-size-7">Pass Rate: %</p>
                         </div>
                     </div>
                     <div class="column is-one-sixth">
                         <div class="box  " style="border-left: 5px solid #69748c"
                             data-status="">
-                            <p class="title is-size-3 mb-0">114</p>
+                            <p class="title is-size-3 mb-0">126</p>
                             <p class="subtitle is-size-7">Avg Duration (ms)</p>
                         </div>
                     </div>
@@ -984,7 +945,7 @@
                       <tbody>
                         <tr>
                           <td>test.spec.js:chromium:Login</td>
-                          <td>114</td>
+                          <td>126</td>
                         </tr>
                       </tbody>
                     </table>
@@ -995,7 +956,8 @@
                       type: 'line',
                       data: {
                         labels: [
-                  "Jun 15, 2025, 4:20 PM",
+                  "Jun 15, 2025, 4:27 PM",
+                  "Jun 15, 2025, 4:24 PM",
                   "Jun 15, 2025, 4:05 PM",
                   "Jun 15, 2025, 3:54 PM",
                   "Jun 15, 2025, 2:01 PM",
@@ -1007,7 +969,8 @@
                       {
                         label: 'Passed',
                         data: [
-                  0,
+                  1,
+                  1,
                   1,
                   1,
                   1,
@@ -1021,7 +984,8 @@
                       {
                         label: 'Failed',
                         data: [
-                  3,
+                  0,
+                  0,
                   0,
                   0,
                   0,
@@ -1035,7 +999,8 @@
                       {
                         label: 'Avg Duration (ms)',
                         data: [
-                  7,
+                  1,
+                  4,
                   4,
                   4,
                   4,
@@ -2227,12 +2192,10 @@
     "projectName": "chromium",
     "suite": "Login",
     "title": "Login",
-    "status": "failed",
-    "flaky": "unexpected",
-    "duration": "7ms",
-    "errors": [
-      "Error: browserType.launch: Target page, context or browser has been closed\nBrowser logs:\n\n╔════════════════════════════════════════════════════════════════════════════════════════════════╗\n║ Looks like you launched a headed browser without having a XServer running.                     ║\n║ Set either &#039;headless: true&#039; or use &#039;xvfb-run &lt;your-playwright-app>&#039; before running Playwright. ║\n║                                                                                                ║\n║ &lt;3 Playwright Team                                                                             ║\n╚════════════════════════════════════════════════════════════════════════════════════════════════╝\nCall log:\n  - &lt;launching> /home/runner/.cache/ms-playwright/chromium-1169/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DeferRendererTasksAfterInput,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-doFVFV --remote-debugging-pipe --no-startup-window<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - &lt;launched> pid=5767<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - [pid=5767][err] [5767:5767:0615/162013.902317:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:249] Missing X server or $DISPLAY<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - [pid=5767][err] [5767:5767:0615/162013.902355:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n</span></span></span></span>"
-    ],
+    "status": "passed",
+    "flaky": "expected",
+    "duration": "01s:337ms",
+    "errors": [],
     "steps": [
       {
         "snippet": "",
@@ -2241,98 +2204,52 @@
       },
       {
         "snippet": "",
-        "title": "After Hooks",
+        "title": "page.goto(/)",
         "location": ""
       },
       {
         "snippet": "",
-        "title": "Worker Cleanup",
+        "title": "page.waitForLoadState",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.type(#user-name, standard_user)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.fill(secret_sauce1)",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.click([type='submit'])",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.waitFor([data-test='error'])",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "locator.isVisible([data-test='error'])",
+        "location": ""
+      },
+      {
+        "snippet": "",
+        "title": "After Hooks",
         "location": ""
       }
     ],
-    "logs": "",
+    "logs": "Login Failed. Incorrect username or password\n",
     "filePath": "test.spec.js",
     "filters": {},
     "base64Image": false,
-    "screenshots": [],
-    "tracePath": "ortoni-data/attachments/31be70adcd52654ff551-77415baf5bc8bce18d3a/trace.zip"
-  },
-  {
-    "port": 2004,
-    "annotations": [],
-    "testTags": [],
-    "location": "test.spec.js:4:1",
-    "retry": "retry",
-    "isRetry": 1,
-    "projectName": "chromium",
-    "suite": "Login",
-    "title": "Login",
-    "status": "failed",
-    "flaky": "unexpected",
-    "duration": "7ms",
-    "errors": [
-      "Error: browserType.launch: Target page, context or browser has been closed\nBrowser logs:\n\n╔════════════════════════════════════════════════════════════════════════════════════════════════╗\n║ Looks like you launched a headed browser without having a XServer running.                     ║\n║ Set either &#039;headless: true&#039; or use &#039;xvfb-run &lt;your-playwright-app>&#039; before running Playwright. ║\n║                                                                                                ║\n║ &lt;3 Playwright Team                                                                             ║\n╚════════════════════════════════════════════════════════════════════════════════════════════════╝\nCall log:\n  - &lt;launching> /home/runner/.cache/ms-playwright/chromium-1169/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DeferRendererTasksAfterInput,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-EvRV6Z --remote-debugging-pipe --no-startup-window<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - &lt;launched> pid=5799<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - [pid=5799][err] [5799:5799:0615/162014.743301:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:249] Missing X server or $DISPLAY<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - [pid=5799][err] [5799:5799:0615/162014.743338:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n</span></span></span></span>"
+    "screenshots": [
+      "ortoni-data/attachments/31be70adcd52654ff551-77415baf5bc8bce18d3a/test-finished-1.png"
     ],
-    "steps": [
-      {
-        "snippet": "",
-        "title": "Before Hooks",
-        "location": ""
-      },
-      {
-        "snippet": "",
-        "title": "After Hooks",
-        "location": ""
-      },
-      {
-        "snippet": "",
-        "title": "Worker Cleanup",
-        "location": ""
-      }
-    ],
-    "logs": "",
-    "filePath": "test.spec.js",
-    "base64Image": false,
-    "screenshots": [],
-    "tracePath": "ortoni-data/attachments/31be70adcd52654ff551-77415baf5bc8bce18d3a/trace.zip"
-  },
-  {
-    "port": 2004,
-    "annotations": [],
-    "testTags": [],
-    "location": "test.spec.js:4:1",
-    "retry": "retry",
-    "isRetry": 2,
-    "projectName": "chromium",
-    "suite": "Login",
-    "title": "Login",
-    "status": "failed",
-    "flaky": "unexpected",
-    "duration": "7ms",
-    "errors": [
-      "Error: browserType.launch: Target page, context or browser has been closed\nBrowser logs:\n\n╔════════════════════════════════════════════════════════════════════════════════════════════════╗\n║ Looks like you launched a headed browser without having a XServer running.                     ║\n║ Set either &#039;headless: true&#039; or use &#039;xvfb-run &lt;your-playwright-app>&#039; before running Playwright. ║\n║                                                                                                ║\n║ &lt;3 Playwright Team                                                                             ║\n╚════════════════════════════════════════════════════════════════════════════════════════════════╝\nCall log:\n  - &lt;launching> /home/runner/.cache/ms-playwright/chromium-1169/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DeferRendererTasksAfterInput,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-UkJ1Kx --remote-debugging-pipe --no-startup-window<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - &lt;launched> pid=5831<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - [pid=5831][err] [5831:5831:0615/162015.560174:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:249] Missing X server or $DISPLAY<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - [pid=5831][err] [5831:5831:0615/162015.560209:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n</span></span></span></span>"
-    ],
-    "steps": [
-      {
-        "snippet": "",
-        "title": "Before Hooks",
-        "location": ""
-      },
-      {
-        "snippet": "",
-        "title": "After Hooks",
-        "location": ""
-      },
-      {
-        "snippet": "",
-        "title": "Worker Cleanup",
-        "location": ""
-      }
-    ],
-    "logs": "",
-    "filePath": "test.spec.js",
-    "base64Image": false,
-    "screenshots": [],
     "tracePath": "ortoni-data/attachments/31be70adcd52654ff551-77415baf5bc8bce18d3a/trace.zip"
   }
 ];
@@ -2341,140 +2258,16 @@
     "testId": "test.spec.js:chromium:Login",
     "history": [
       {
-        "status": "failed",
-        "duration": "7ms",
-        "error_message": "Error: browserType.launch: Target page, context or browser has been closed\nBrowser logs:\n\n╔════════════════════════════════════════════════════════════════════════════════════════════════╗\n║ Looks like you launched a headed browser without having a XServer running.                     ║\n║ Set either &#039;headless: true&#039; or use &#039;xvfb-run &lt;your-playwright-app>&#039; before running Playwright. ║\n║                                                                                                ║\n║ &lt;3 Playwright Team                                                                             ║\n╚════════════════════════════════════════════════════════════════════════════════════════════════╝\nCall log:\n  - &lt;launching> /home/runner/.cache/ms-playwright/chromium-1169/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DeferRendererTasksAfterInput,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-doFVFV --remote-debugging-pipe --no-startup-window<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - &lt;launched> pid=5767<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - [pid=5767][err] [5767:5767:0615/162013.902317:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:249] Missing X server or $DISPLAY<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - [pid=5767][err] [5767:5767:0615/162013.902355:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n</span></span></span></span>",
-        "run_date": "Jun 15, 2025, 04:20 PM UTC"
-      },
-      {
-        "status": "failed",
-        "duration": "7ms",
-        "error_message": "Error: browserType.launch: Target page, context or browser has been closed\nBrowser logs:\n\n╔════════════════════════════════════════════════════════════════════════════════════════════════╗\n║ Looks like you launched a headed browser without having a XServer running.                     ║\n║ Set either &#039;headless: true&#039; or use &#039;xvfb-run &lt;your-playwright-app>&#039; before running Playwright. ║\n║                                                                                                ║\n║ &lt;3 Playwright Team                                                                             ║\n╚════════════════════════════════════════════════════════════════════════════════════════════════╝\nCall log:\n  - &lt;launching> /home/runner/.cache/ms-playwright/chromium-1169/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DeferRendererTasksAfterInput,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-EvRV6Z --remote-debugging-pipe --no-startup-window<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - &lt;launched> pid=5799<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - [pid=5799][err] [5799:5799:0615/162014.743301:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:249] Missing X server or $DISPLAY<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - [pid=5799][err] [5799:5799:0615/162014.743338:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n</span></span></span></span>",
-        "run_date": "Jun 15, 2025, 04:20 PM UTC"
-      },
-      {
-        "status": "failed",
-        "duration": "7ms",
-        "error_message": "Error: browserType.launch: Target page, context or browser has been closed\nBrowser logs:\n\n╔════════════════════════════════════════════════════════════════════════════════════════════════╗\n║ Looks like you launched a headed browser without having a XServer running.                     ║\n║ Set either &#039;headless: true&#039; or use &#039;xvfb-run &lt;your-playwright-app>&#039; before running Playwright. ║\n║                                                                                                ║\n║ &lt;3 Playwright Team                                                                             ║\n╚════════════════════════════════════════════════════════════════════════════════════════════════╝\nCall log:\n  - &lt;launching> /home/runner/.cache/ms-playwright/chromium-1169/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DeferRendererTasksAfterInput,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-UkJ1Kx --remote-debugging-pipe --no-startup-window<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - &lt;launched> pid=5831<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - [pid=5831][err] [5831:5831:0615/162015.560174:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:249] Missing X server or $DISPLAY<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - [pid=5831][err] [5831:5831:0615/162015.560209:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n</span></span></span></span>",
-        "run_date": "Jun 15, 2025, 04:20 PM UTC"
+        "status": "passed",
+        "duration": "01s:337ms",
+        "error_message": "",
+        "run_date": "Jun 15, 2025, 04:27 PM UTC"
       },
       {
         "status": "passed",
-        "duration": "04s:458ms",
+        "duration": "04s:062ms",
         "error_message": "",
-        "run_date": "Jun 15, 2025, 04:05 PM UTC"
-      },
-      {
-        "status": "passed",
-        "duration": "04s:092ms",
-        "error_message": "",
-        "run_date": "Jun 15, 2025, 03:54 PM UTC"
-      },
-      {
-        "status": "passed",
-        "duration": "04s:389ms",
-        "error_message": "",
-        "run_date": "Jun 15, 2025, 02:01 PM UTC"
-      },
-      {
-        "status": "failed",
-        "duration": "986ms",
-        "error_message": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://.saucedemo.com/\nCall log:\n  - navigating to &quot;https://.saucedemo.com/&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at loginPage.login (/Users/farhanlabibbrinto/Documents/Interview Prep/pageObjects/loginPage.js:14:25)\n    at POMangaer.login (/Users/farhanlabibbrinto/Documents/Interview Prep/pageObjects/POManager.js:10:37)\n    at /Users/farhanlabibbrinto/Documents/Interview Prep/tests/test.spec.js:7:15</span>",
-        "run_date": "Jun 15, 2025, 02:01 PM UTC"
-      },
-      {
-        "status": "failed",
-        "duration": "03s:656ms",
-        "error_message": "Error: locator.type: Target page, context or browser has been closed\nCall log:\n  - waiting for locator(&#039;#user-name&#039;)<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at loginPage.login (/Users/farhanlabibbrinto/Documents/Interview Prep/pageObjects/loginPage.js:16:34)\n    at POMangaer.login (/Users/farhanlabibbrinto/Documents/Interview Prep/pageObjects/POManager.js:10:16)\n    at /Users/farhanlabibbrinto/Documents/Interview Prep/tests/test.spec.js:7:5</span>",
-        "run_date": "Jun 15, 2025, 02:00 PM UTC"
-      },
-      {
-        "status": "passed",
-        "duration": "04s:039ms",
-        "error_message": "",
-        "run_date": "Jun 15, 2025, 01:55 PM UTC"
-      }
-    ]
-  },
-  {
-    "testId": "test.spec.js:chromium:Login",
-    "history": [
-      {
-        "status": "failed",
-        "duration": "7ms",
-        "error_message": "Error: browserType.launch: Target page, context or browser has been closed\nBrowser logs:\n\n╔════════════════════════════════════════════════════════════════════════════════════════════════╗\n║ Looks like you launched a headed browser without having a XServer running.                     ║\n║ Set either &#039;headless: true&#039; or use &#039;xvfb-run &lt;your-playwright-app>&#039; before running Playwright. ║\n║                                                                                                ║\n║ &lt;3 Playwright Team                                                                             ║\n╚════════════════════════════════════════════════════════════════════════════════════════════════╝\nCall log:\n  - &lt;launching> /home/runner/.cache/ms-playwright/chromium-1169/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DeferRendererTasksAfterInput,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-doFVFV --remote-debugging-pipe --no-startup-window<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - &lt;launched> pid=5767<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - [pid=5767][err] [5767:5767:0615/162013.902317:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:249] Missing X server or $DISPLAY<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - [pid=5767][err] [5767:5767:0615/162013.902355:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n</span></span></span></span>",
-        "run_date": "Jun 15, 2025, 04:20 PM UTC"
-      },
-      {
-        "status": "failed",
-        "duration": "7ms",
-        "error_message": "Error: browserType.launch: Target page, context or browser has been closed\nBrowser logs:\n\n╔════════════════════════════════════════════════════════════════════════════════════════════════╗\n║ Looks like you launched a headed browser without having a XServer running.                     ║\n║ Set either &#039;headless: true&#039; or use &#039;xvfb-run &lt;your-playwright-app>&#039; before running Playwright. ║\n║                                                                                                ║\n║ &lt;3 Playwright Team                                                                             ║\n╚════════════════════════════════════════════════════════════════════════════════════════════════╝\nCall log:\n  - &lt;launching> /home/runner/.cache/ms-playwright/chromium-1169/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DeferRendererTasksAfterInput,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-EvRV6Z --remote-debugging-pipe --no-startup-window<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - &lt;launched> pid=5799<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - [pid=5799][err] [5799:5799:0615/162014.743301:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:249] Missing X server or $DISPLAY<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - [pid=5799][err] [5799:5799:0615/162014.743338:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n</span></span></span></span>",
-        "run_date": "Jun 15, 2025, 04:20 PM UTC"
-      },
-      {
-        "status": "failed",
-        "duration": "7ms",
-        "error_message": "Error: browserType.launch: Target page, context or browser has been closed\nBrowser logs:\n\n╔════════════════════════════════════════════════════════════════════════════════════════════════╗\n║ Looks like you launched a headed browser without having a XServer running.                     ║\n║ Set either &#039;headless: true&#039; or use &#039;xvfb-run &lt;your-playwright-app>&#039; before running Playwright. ║\n║                                                                                                ║\n║ &lt;3 Playwright Team                                                                             ║\n╚════════════════════════════════════════════════════════════════════════════════════════════════╝\nCall log:\n  - &lt;launching> /home/runner/.cache/ms-playwright/chromium-1169/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DeferRendererTasksAfterInput,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-UkJ1Kx --remote-debugging-pipe --no-startup-window<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - &lt;launched> pid=5831<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - [pid=5831][err] [5831:5831:0615/162015.560174:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:249] Missing X server or $DISPLAY<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - [pid=5831][err] [5831:5831:0615/162015.560209:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n</span></span></span></span>",
-        "run_date": "Jun 15, 2025, 04:20 PM UTC"
-      },
-      {
-        "status": "passed",
-        "duration": "04s:458ms",
-        "error_message": "",
-        "run_date": "Jun 15, 2025, 04:05 PM UTC"
-      },
-      {
-        "status": "passed",
-        "duration": "04s:092ms",
-        "error_message": "",
-        "run_date": "Jun 15, 2025, 03:54 PM UTC"
-      },
-      {
-        "status": "passed",
-        "duration": "04s:389ms",
-        "error_message": "",
-        "run_date": "Jun 15, 2025, 02:01 PM UTC"
-      },
-      {
-        "status": "failed",
-        "duration": "986ms",
-        "error_message": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://.saucedemo.com/\nCall log:\n  - navigating to &quot;https://.saucedemo.com/&quot;, waiting until &quot;load&quot;<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at loginPage.login (/Users/farhanlabibbrinto/Documents/Interview Prep/pageObjects/loginPage.js:14:25)\n    at POMangaer.login (/Users/farhanlabibbrinto/Documents/Interview Prep/pageObjects/POManager.js:10:37)\n    at /Users/farhanlabibbrinto/Documents/Interview Prep/tests/test.spec.js:7:15</span>",
-        "run_date": "Jun 15, 2025, 02:01 PM UTC"
-      },
-      {
-        "status": "failed",
-        "duration": "03s:656ms",
-        "error_message": "Error: locator.type: Target page, context or browser has been closed\nCall log:\n  - waiting for locator(&#039;#user-name&#039;)<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n\n    at loginPage.login (/Users/farhanlabibbrinto/Documents/Interview Prep/pageObjects/loginPage.js:16:34)\n    at POMangaer.login (/Users/farhanlabibbrinto/Documents/Interview Prep/pageObjects/POManager.js:10:16)\n    at /Users/farhanlabibbrinto/Documents/Interview Prep/tests/test.spec.js:7:5</span>",
-        "run_date": "Jun 15, 2025, 02:00 PM UTC"
-      },
-      {
-        "status": "passed",
-        "duration": "04s:039ms",
-        "error_message": "",
-        "run_date": "Jun 15, 2025, 01:55 PM UTC"
-      }
-    ]
-  },
-  {
-    "testId": "test.spec.js:chromium:Login",
-    "history": [
-      {
-        "status": "failed",
-        "duration": "7ms",
-        "error_message": "Error: browserType.launch: Target page, context or browser has been closed\nBrowser logs:\n\n╔════════════════════════════════════════════════════════════════════════════════════════════════╗\n║ Looks like you launched a headed browser without having a XServer running.                     ║\n║ Set either &#039;headless: true&#039; or use &#039;xvfb-run &lt;your-playwright-app>&#039; before running Playwright. ║\n║                                                                                                ║\n║ &lt;3 Playwright Team                                                                             ║\n╚════════════════════════════════════════════════════════════════════════════════════════════════╝\nCall log:\n  - &lt;launching> /home/runner/.cache/ms-playwright/chromium-1169/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DeferRendererTasksAfterInput,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-doFVFV --remote-debugging-pipe --no-startup-window<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - &lt;launched> pid=5767<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - [pid=5767][err] [5767:5767:0615/162013.902317:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:249] Missing X server or $DISPLAY<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - [pid=5767][err] [5767:5767:0615/162013.902355:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n</span></span></span></span>",
-        "run_date": "Jun 15, 2025, 04:20 PM UTC"
-      },
-      {
-        "status": "failed",
-        "duration": "7ms",
-        "error_message": "Error: browserType.launch: Target page, context or browser has been closed\nBrowser logs:\n\n╔════════════════════════════════════════════════════════════════════════════════════════════════╗\n║ Looks like you launched a headed browser without having a XServer running.                     ║\n║ Set either &#039;headless: true&#039; or use &#039;xvfb-run &lt;your-playwright-app>&#039; before running Playwright. ║\n║                                                                                                ║\n║ &lt;3 Playwright Team                                                                             ║\n╚════════════════════════════════════════════════════════════════════════════════════════════════╝\nCall log:\n  - &lt;launching> /home/runner/.cache/ms-playwright/chromium-1169/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DeferRendererTasksAfterInput,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-EvRV6Z --remote-debugging-pipe --no-startup-window<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - &lt;launched> pid=5799<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - [pid=5799][err] [5799:5799:0615/162014.743301:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:249] Missing X server or $DISPLAY<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - [pid=5799][err] [5799:5799:0615/162014.743338:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n</span></span></span></span>",
-        "run_date": "Jun 15, 2025, 04:20 PM UTC"
-      },
-      {
-        "status": "failed",
-        "duration": "7ms",
-        "error_message": "Error: browserType.launch: Target page, context or browser has been closed\nBrowser logs:\n\n╔════════════════════════════════════════════════════════════════════════════════════════════════╗\n║ Looks like you launched a headed browser without having a XServer running.                     ║\n║ Set either &#039;headless: true&#039; or use &#039;xvfb-run &lt;your-playwright-app>&#039; before running Playwright. ║\n║                                                                                                ║\n║ &lt;3 Playwright Team                                                                             ║\n╚════════════════════════════════════════════════════════════════════════════════════════════════╝\nCall log:\n  - &lt;launching> /home/runner/.cache/ms-playwright/chromium-1169/chrome-linux/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AutoExpandDetailsElement,AvoidUnnecessaryBeforeUnloadCheckSync,CertificateTransparencyComponentUpdater,DeferRendererTasksAfterInput,DestroyProfileOnBrowserClose,DialMediaRouteProvider,ExtensionManifestV2Disabled,GlobalMediaControls,HttpsUpgrades,ImprovedCookieControls,LazyFrameLoading,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --enable-automation --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-UkJ1Kx --remote-debugging-pipe --no-startup-window<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - &lt;launched> pid=5831<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - [pid=5831][err] [5831:5831:0615/162015.560174:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:249] Missing X server or $DISPLAY<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n  - [pid=5831][err] [5831:5831:0615/162015.560209:ERROR:ui/aura/env.cc:257] The platform failed to initialize.  Exiting.<span style=\"font-weight:normal;text-decoration:none;font-style:normal\">\n</span></span></span></span>",
-        "run_date": "Jun 15, 2025, 04:20 PM UTC"
+        "run_date": "Jun 15, 2025, 04:24 PM UTC"
       },
       {
         "status": "passed",
