@@ -35,7 +35,7 @@ jobs:
 
       - name: Upload Otorno HTML report
         if: always()
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: otorno-report
           path: report-db/
