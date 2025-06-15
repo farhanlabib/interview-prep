@@ -6,6 +6,31 @@ import { on } from 'events';
 const envFile = process.env.ENV ? `.env.${process.env.ENV}` : '.env.local';
 dotenv.config({ path: envFile });
 
+const reportConfig = {
+  open: process.env.CI ? "never" : "always",
+  folderPath: "report-db",
+  filename: "index.html",
+  logo:"logo.{png, jpg}",
+  title: "Ortoni Test Report",
+  showProject: !true,
+  projectName: "Ortoni-Report",
+  testType: "e2e",
+  authorName: "Labib",
+  base64Image: false,
+  stdIO: false,
+  preferredTheme: "light",
+  chartType: "doughnut" | "pie",
+  meta: {
+    project: "Playwright",
+    version: "3.0.0",
+    description: "Playwright test report",
+    testCycle: "1",
+    release: "1.0.0",
+    platform: "Windows",
+  },
+};
+
+
 
 /**
  * @see https://playwright.dev/docs/test-configuration
@@ -21,7 +46,8 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  // reporter: [['line'],['allure-playwright']],
+  reporter: [["ortoni-report", reportConfig]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
