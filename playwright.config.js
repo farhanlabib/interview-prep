@@ -3,8 +3,8 @@ import { defineConfig, devices } from '@playwright/test';
 const dotenv = require('dotenv');
 import { on } from 'events';
 
-const envFile = process.env.ENV ? `.env.${process.env.ENV}` : '.env.local';
-dotenv.config({ path: envFile });
+const env = process.env.ENV || 'local';
+dotenv.config({ path: `./env/.env.${env}` });
 
 const reportConfig = {
   open: process.env.CI ? "never" : "always",
@@ -51,7 +51,7 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-    baseURL: 'https://www.saucedemo.com/',
+    baseURL: process.env.BASE_URL,
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',

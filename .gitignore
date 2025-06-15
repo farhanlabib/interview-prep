@@ -8,6 +8,7 @@ playwright-report/
 # Allure results and generated report
 allure-results/
 allure-report/
+report-db/
 
 # OS-specific
 .DS_Store

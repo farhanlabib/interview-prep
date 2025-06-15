@@ -11,7 +11,7 @@ class loginPage{
 
 
     async login(username,password){
-        await this.page.goto('https://www.saucedemo.com/')
+        await this.page.goto('/')
         await this.page.waitForLoadState('networkidle')
         await this.userNameInput.type(username)
         await this.passwordInput.fill(password)
