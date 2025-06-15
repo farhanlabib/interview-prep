@@ -32,3 +32,10 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./report-db
+
+      - name: Upload Otorno HTML report
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: otorno-report
+          path: report-db/
