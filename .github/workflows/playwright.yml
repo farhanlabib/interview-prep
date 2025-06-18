@@ -1,11 +1,32 @@
 name: Deploy Otorno Report to GitHub Pages
 
 on:
-  push:
-    branches: [ main ]  # or your working branch
+    push:
+        branches: [ main ]  # or your working branch
+    workflow_dispatch:
+        inputs:
+            browser:
+                type: choice
+                description: 'Which browser to test'
+                required: false
+                default: 'all'
+                options:
+                    - all
+                    - firefox
+                    - chromium
+                    - webkit
+            env:
+                type: choice
+                description: 'Which environment to run tests against'
+                required: true
+                default: 'local'
+                options:
+                    - local
+                    - stage
+                    - prod
 
 jobs:
-  deploy-report:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,7 +45,14 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright Tests
-        run: npx playwright test
+        env:
+          ENV: ${{ github.event.inputs.env }}
+        run: |
+          if [ "${{ github.event.inputs.browser }}" = "all" ]; then
+            npx playwright test
+          else
+            npx playwright test --project ${{ github.event.inputs.browser }}
+          fi
 
       - name: Deploy report-db to gh-pages
         if: always()
