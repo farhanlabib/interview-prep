@@ -51,7 +51,7 @@ jobs:
           if [ "${{ github.event.inputs.browser }}" = "all" ]; then
             npx playwright test
           else
-            npx playwright test --project ${{ github.event.inputs.browser }}
+            npx playwright test --project ${{ github.event.inputs.browser || 'all'}}
           fi
 
       - name: Deploy report-db to gh-pages
