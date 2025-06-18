@@ -46,7 +46,7 @@ jobs:
 
       - name: Run Playwright Tests
         env:
-          ENV: ${{ github.event.inputs.env }}
+          ENV: ${{ github.event.inputs.env || 'local'}}
         run: |
           if [ "${{ github.event.inputs.browser }}" = "all" ]; then
             npx playwright test
